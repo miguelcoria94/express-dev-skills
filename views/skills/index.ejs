@@ -19,7 +19,7 @@
         <% skills.forEach((skill) => { %>
         <li>
           <a
-            class="group mt-8 bg-blue-600 inline-flex items-center bg-b justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-900 text-white hover:bg-blue-700 hover:text-blue-100 active:bg-blue-800 active:text-blue-300 focus-visible:outline-blue-900"
+            class="underline hover:no-underline"
             variant="solid"
             href="/skills/<%= skill.id %>"
             ><%= skill.skill %></a
@@ -27,6 +27,12 @@
         </li>
         <% }); %>
       </ul>
+
+      <a
+        class="group mt-8 bg-blue-600 inline-flex items-center bg-b justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-900 text-white hover:bg-blue-700 hover:text-blue-100 active:bg-blue-800 active:text-blue-300 focus-visible:outline-blue-900"
+        href="/skills/create"
+        >Add a new skill</a
+      >
     </div>
   </body>
 </html>
